@@ -1,0 +1,10 @@
+# robots.txt for Streamlyne
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://streamlyne.in/sitemap.xml
+
+# Disallow admin/private paths (if any in future)
+# Disallow: /admin/
+# Disallow: /api/
