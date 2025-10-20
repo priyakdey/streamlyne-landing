@@ -1,9 +1,11 @@
 <div align="center">
-    <img alt="Streamlyne logo" src="./public/assets/brand/logo.png">
+    <img alt="Streamlyne logo" src="./public/assets/brand/logo.png" height="1500" width="500">
 </div>
 
+<br>
+
 <div align="center">
-    <h1>Streamlyne Landing Page</h1>>
+    <h1><a href="https://streamlyne.in" target="_blank">Streamlyne Landing Page</a></h1>
 </div>
 
 
