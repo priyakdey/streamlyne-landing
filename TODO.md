@@ -60,9 +60,8 @@
 
 ## Future Enhancements
 
-- [ ] **Analytics Setup**
-  - Set `PLAUSIBLE_DOMAIN` environment variable if using Plausible Analytics
-  - Or integrate Google Analytics / other analytics tool
+- [X] **Analytics Setup**
+  - Using Vercel Analytics (integrated via Vercel dashboard)
 
 - [ ] **Email Collection** (Optional)
   - Add waitlist/early access form if planning to collect emails before launch

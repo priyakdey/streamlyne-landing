@@ -29,13 +29,6 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
         <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
         <StructuredData />
-        {process.env.PLAUSIBLE_DOMAIN && (
-          <script
-            defer
-            data-domain={process.env.PLAUSIBLE_DOMAIN}
-            src="https://plausible.io/js/script.js"
-          ></script>
-        )}
       </head>
       <body className={inter.className}>
         <ThemeProvider
