@@ -17,13 +17,19 @@
   - Tools: Figma, Canva, Photoshop, or online OG image generators
   - Reference: When shared on Twitter/X, Facebook, LinkedIn, Discord, Slack, WhatsApp
 
-- [ ] **Set Environment Variable**
+- [X] **Set Environment Variable**
   - Add to `.env.local`: `NEXT_PUBLIC_SITE_URL=https://streamlyne.in`
   - This ensures all URLs use the correct domain
 
 - [ ] **Generate Sitemap**
   - Run `pnpm postbuild` after building to generate sitemap
   - Sitemap will be created at `/public/sitemap.xml`
+
+- [ ] **Deployment**
+  - Make deployment as part of every branch - preview
+  - merge to main branch deploys to production
+  - make sure streamlyne.in domain is connected.
+  - make sure its ssl enabled - https  
 
 ### Post-Launch
 
