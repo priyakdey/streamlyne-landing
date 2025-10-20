@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
@@ -29,13 +30,6 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_io/apple-touch-icon.png" />
         <link rel="manifest" href="/assets/favicon_io/site.webmanifest" />
         <StructuredData />
-        {process.env.PLAUSIBLE_DOMAIN && (
-          <script
-            defer
-            data-domain={process.env.PLAUSIBLE_DOMAIN}
-            src="https://plausible.io/js/script.js"
-          ></script>
-        )}
       </head>
       <body className={inter.className}>
         <ThemeProvider
@@ -50,6 +44,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
