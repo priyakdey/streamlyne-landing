@@ -26,8 +26,8 @@ export function Navbar() {
             <Image
               src="/assets/brand/logo.png"
               alt="Streamlyne"
-              width={180}
-              height={42}
+              width={150}
+              height={35}
             />
           </Link>
 
