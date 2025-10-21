@@ -26,8 +26,8 @@ export function Navbar() {
             <Image
               src="/assets/brand/logo.png"
               alt="Streamlyne"
-              width={180}
-              height={42}
+              width={150}
+              height={35}
             />
           </Link>
 
@@ -43,6 +43,9 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <Button asChild className="h-9">
+                <Link href="https://app.streamlyne.in" target="_blank" rel="noopener noreferrer">Get Started</Link>
+              </Button>
             </div>
 
             <ThemeToggle />
@@ -78,6 +81,9 @@ export function Navbar() {
                   {link.label}
                 </Link>
               ))}
+              <Button asChild className="h-9" onClick={() => setMobileMenuOpen(false)}>
+                <Link href="https://app.streamlyne.in" target="_blank" rel="noopener noreferrer">Get Started</Link>
+              </Button>
             </div>
           </div>
         )}

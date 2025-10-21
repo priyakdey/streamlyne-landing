@@ -35,7 +35,23 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="py-20 sm:py-32">
+      <section className="relative overflow-hidden py-20 sm:py-32">
+        {/* Animated Background Effects */}
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute left-1/4 top-1/4 h-96 w-96 animate-pulse rounded-full bg-primary/20 blur-3xl" />
+          <div className="absolute right-1/4 bottom-1/4 h-96 w-96 animate-pulse rounded-full bg-primary/10 blur-3xl [animation-delay:2s]" />
+          <div className="absolute left-1/2 top-1/2 h-64 w-64 animate-pulse rounded-full bg-primary/5 blur-2xl [animation-delay:4s]" />
+        </div>
+
+        {/* Floating Elements */}
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <div className="absolute left-[10%] top-[20%] h-2 w-2 animate-float rounded-full bg-primary/40" />
+          <div className="absolute right-[15%] top-[30%] h-3 w-3 animate-float rounded-full bg-primary/30 [animation-delay:1s]" />
+          <div className="absolute left-[20%] bottom-[25%] h-2 w-2 animate-float rounded-full bg-primary/50 [animation-delay:2s]" />
+          <div className="absolute right-[25%] bottom-[35%] h-3 w-3 animate-float rounded-full bg-primary/40 [animation-delay:3s]" />
+          <div className="absolute left-[70%] top-[15%] h-2 w-2 animate-float rounded-full bg-primary/30 [animation-delay:4s]" />
+        </div>
+
         <Container>
           <div className="mx-auto text-center">
             <div
